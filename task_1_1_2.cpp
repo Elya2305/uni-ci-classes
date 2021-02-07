@@ -21,5 +21,6 @@ int main() {
     cin >> a >> b >> c;
     max_mod(a, b, c);
     cout << "Max module -> " << max_mod(a, b, c) << "\nMin module -> " << min_mod(a, b, c);
+    return 0;
 }
 
