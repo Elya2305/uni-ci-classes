@@ -13,11 +13,11 @@ int main() {
         arr[i] = n;
     }
 
-    int total = 0;
+    double sum = 0;
     for (double a : arr) {
-        if (a > M_E) total++;
+        if (a > M_E) sum += a;
     }
 
-    cout << "TOTAL + " << total;
+    cout << "Sum + " << sum;
 
 }
