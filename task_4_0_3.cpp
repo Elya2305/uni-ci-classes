@@ -55,7 +55,8 @@ int main() {
     cout << "Sum: " << sum(*r1, *r2) << "\n";
     cout << "Multiplication: " << mul(*r1, *r2) << "\n";
     compare(*r1, *r2);
-
-
     cut(*r1);
+    
+    delete r1;
+    delete r2;
 }
