@@ -1,13 +1,13 @@
-#include <iostream>
+#include "Complex.h"
 
 using namespace std;
 
+
 int main() {
-    int a;
-    double F;
-    cout << "Temperature: ";
-    cin >> a;
-    F = a * 9.0 / 5.0 + 32.0;
-    cout << F << endl;
-    return 0;
+    Complex complex{0.4, 0};
+    Complex result = Complex::atan(complex);
+    result.print();
+
+    Complex c = Complex{};
+    c.print();
 }
