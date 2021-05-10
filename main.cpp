@@ -1,13 +1,16 @@
-#include <iostream>
+#include "Product.h"
 
 using namespace std;
 
 int main() {
-    int a;
-    double F;
-    cout << "Temperature: ";
-    cin >> a;
-    F = a * 9.0 / 5.0 + 32.0;
-    cout << F << endl;
-    return 0;
+    Toy t = Toy{"ball", 1.2};
+    Food f = Food{"tomato's", 12};
+    Technic tech = Technic{"phone", 113};
+
+    Product::writeToBinFile(t);
+    Product::writeToBinFile(f);
+    Product::writeToBinFile(tech);
+    Product::findByTitle("phone");
+    Product::buyByTitle("tomato's");
+    Product::findByTitle("tomato's");
 }
